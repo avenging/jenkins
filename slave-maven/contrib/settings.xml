@@ -9,9 +9,17 @@
 
  <proxies>
    <proxy>
-      <id>default</id>
+      <id>http</id>
       <active>true</active>
       <protocol>http</protocol>
+      <host>euuktelsprx.europe.odcorp.net</host>
+             <port>3128</port>
+      <nonProxyHosts>.svc,.cluster.local,0,1,2,3,4,5,6,7,8,9</nonProxyHosts>
+    </proxy>
+    <proxy>
+      <id>https</id>
+      <active>true</active>
+      <protocol>https</protocol>
       <host>euuktelsprx.europe.odcorp.net</host>
              <port>3128</port>
       <nonProxyHosts>.svc,.cluster.local,0,1,2,3,4,5,6,7,8,9</nonProxyHosts>
